@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 7,
+    "passes": 1,
+    "pending": 0,
+    "failures": 6,
+    "start": "2022-05-20T14:10:26.163Z",
+    "end": "2022-05-20T14:10:26.373Z",
+    "duration": 210
+  },
+  "tests": [
+    {
+      "title": "returns all drivers that match the passed in name",
+      "fullTitle": "index.js findMatching() returns all drivers that match the passed in name",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [] to deeply equal [ 'Bobby', 'Bobby' ]",
+        "showDiff": true,
+        "actual": "[]",
+        "expected": "[\n  \"Bobby\"\n  \"Bobby\"\n]",
+        "stack": "AssertionError: expected [] to deeply equal [ 'Bobby', 'Bobby' ]\n    at Context.<anonymous> (test/indexTest.js:8:49)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "returns matching drivers if case does not match but letters do",
+      "fullTitle": "index.js findMatching() returns matching drivers if case does not match but letters do",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [] to deeply equal [ 'Bobby', 'bobby' ]",
+        "showDiff": true,
+        "actual": "[]",
+        "expected": "[\n  \"Bobby\"\n  \"bobby\"\n]",
+        "stack": "AssertionError: expected [] to deeply equal [ 'Bobby', 'bobby' ]\n    at Context.<anonymous> (test/indexTest.js:15:49)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "returns an empty array if there is no match",
+      "fullTitle": "index.js findMatching() returns an empty array if there is no match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a driver if beginning provided letters match",
+      "fullTitle": "index.js fuzzyMatch() returns a driver if beginning provided letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:35:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "does not return drivers if only middle or ending letters match",
+      "fullTitle": "index.js fuzzyMatch() does not return drivers if only middle or ending letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:39:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "does not return drivers if only middle or ending letters match",
+      "fullTitle": "index.js fuzzyMatch() does not return drivers if only middle or ending letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:43:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "accesses the data structure to check if name matches",
+      "fullTitle": "index.js matchName() accesses the data structure to check if name matches",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: matchName is not defined\n    at Context.<anonymous> (test/indexTest.js:67:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "matchName is not defined"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns all drivers that match the passed in name",
+      "fullTitle": "index.js findMatching() returns all drivers that match the passed in name",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [] to deeply equal [ 'Bobby', 'Bobby' ]",
+        "showDiff": true,
+        "actual": "[]",
+        "expected": "[\n  \"Bobby\"\n  \"Bobby\"\n]",
+        "stack": "AssertionError: expected [] to deeply equal [ 'Bobby', 'Bobby' ]\n    at Context.<anonymous> (test/indexTest.js:8:49)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "returns matching drivers if case does not match but letters do",
+      "fullTitle": "index.js findMatching() returns matching drivers if case does not match but letters do",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [] to deeply equal [ 'Bobby', 'bobby' ]",
+        "showDiff": true,
+        "actual": "[]",
+        "expected": "[\n  \"Bobby\"\n  \"bobby\"\n]",
+        "stack": "AssertionError: expected [] to deeply equal [ 'Bobby', 'bobby' ]\n    at Context.<anonymous> (test/indexTest.js:15:49)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "returns a driver if beginning provided letters match",
+      "fullTitle": "index.js fuzzyMatch() returns a driver if beginning provided letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:35:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "does not return drivers if only middle or ending letters match",
+      "fullTitle": "index.js fuzzyMatch() does not return drivers if only middle or ending letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:39:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "does not return drivers if only middle or ending letters match",
+      "fullTitle": "index.js fuzzyMatch() does not return drivers if only middle or ending letters match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: fuzzyMatch is not defined\n    at Context.<anonymous> (test/indexTest.js:43:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "fuzzyMatch is not defined"
+      }
+    },
+    {
+      "title": "accesses the data structure to check if name matches",
+      "fullTitle": "index.js matchName() accesses the data structure to check if name matches",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: matchName is not defined\n    at Context.<anonymous> (test/indexTest.js:67:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "matchName is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns an empty array if there is no match",
+      "fullTitle": "index.js findMatching() returns an empty array if there is no match",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
